@@ -7,7 +7,7 @@
 	<title>Hello, world!</title>
 	<style>
 		.bs .row > .col, .bs .row > [class^="col-"] {
-			paddin-top: .75rem;
+			padding-top: .75rem;
 			padding-bottom: .75rem;
 			background-color: #5a6268;
 			border: 1px solid #000;
@@ -134,51 +134,111 @@
 		</div>
 
 		<h3 class="mt-5">Выравнивание колонок по вертикали</h3>
-			<div class="row flex-cols">
-				<div class="col align-self-start">col-1</div>
-				<div class="col align-self-center">col-2</div>
-				<div class="col align-self-end">col-3</div>
-			</div>
+		<div class="row flex-cols">
+			<div class="col align-self-start">col-1</div>
+			<div class="col align-self-center">col-2</div>
+			<div class="col align-self-end">col-3</div>
+		</div>
 
 		<h3 class="mt-5">Выравнивание колонок по горизонтали</h3>
-			<div class="row justify-content-start">
-				<div class="col-4">col-1</div>
-				<div class="col-4">col-2</div>
-			</div>
+		<div class="row justify-content-start">
+			<div class="col-4">col-1</div>
+			<div class="col-4">col-2</div>
+		</div>
 
 		<br>
 
-			<div class="row justify-content-center">
-				<div class="col-4">col-1</div>
-				<div class="col-4">col-2</div>
-			</div>
+		<div class="row justify-content-center">
+			<div class="col-4">col-1</div>
+			<div class="col-4">col-2</div>
+		</div>
 
 		<br>
 
-			<div class="row justify-content-end">
-				<div class="col-4">col-1</div>
-				<div class="col-4">col-2</div>
-			</div>
+		<div class="row justify-content-end">
+			<div class="col-4">col-1</div>
+			<div class="col-4">col-2</div>
+		</div>
 
 		<br>
 
-			<div class="row justify-content-around">
-				<div class="col-1">col-1</div>
-				<div class="col-1">col-2</div>
-				<div class="col-1">col-3</div>
-				<div class="col-1">col-4</div>
-			</div>
+		<div class="row justify-content-around">
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-2</div>
+			<div class="col-1">col-3</div>
+			<div class="col-1">col-4</div>
+		</div>
 
 		<br>
 
-			<div class="row justify-content-between">
-				<div class="col-1">col-1</div>
-				<div class="col-1">col-2</div>
-				<div class="col-1">col-3</div>
-				<div class="col-1">col-4</div>
-			</div>
+		<div class="row justify-content-between">
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-2</div>
+			<div class="col-1">col-3</div>
+			<div class="col-1">col-4</div>
+		</div>
 
+		<!-- -->
+
+		<h3 class="mt-5">Изменение порядка</h3>
+		<h3>Классы сортировки</h3>
+		<div class="row">
+			<div class="col-md-6 order-md-2">Content</div>
+			<div class="col-md-3 order-md-1">Sidebar-1</div>
+			<div class="col-md-3 order-md-3">Sidebar-2</div>
+			<!-- "Используем order-md-3" на Sidebar-2
+			так как Content сместится на 1 столбец -->
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-md-6">Content</div>
+			<div class="col-md-3 order-md-first">Sidebar-1</div>
+			<div class="col-md-3">Sidebar-2</div>
+		</div>
+
+		<h3 class="mt-5">Отступы</h3>
+		<div class="row">
+			<div class="col-md-6 offset-md-3">Header</div>
+		</div>
+
+		<h3 class="mt-5">Классы-помощники отступов</h3>
+		<div class="row">
+			<div class="col-md-3 mr-auto ml-auto">Header</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-md-3 mr-auto">Header-1</div>
+			<div class="col-md-6 ">Header-2</div>
+		</div>
+
+		<h3 class="mt-5">Вложенность сеток</h3>
+		<div class="row">
+			<div class="col-md-3">Sidebar-1</div>
+			<div class="col order-first">
+				Content
+				<div class="row">
+					<div class="col-md-4">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur doloribus error, ipsam
+							quas quibusdam rem similique? Ex explicabo maiores nostrum.</p>
+					</div>
+					<div class="col-md-4">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus libero maiores modi neque
+							nihil officia quam totam ut voluptas voluptatem?</p>
+					</div>
+					<div class="col-md-4">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aliquid,
+							assumenda excepturi harum ipsa pariatur porro praesentium sint voluptates?</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
+</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
