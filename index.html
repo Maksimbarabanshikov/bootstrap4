@@ -13,6 +13,15 @@
 			border: 1px solid #000;
 			color: #fff;
 		}
+
+		.flex-cols {
+			min-height: 10rem;
+			background-color: #ccc;
+		}
+
+		body {
+			margin-bottom: 100px;
+		}
 	</style>
 </head>
 <body>
@@ -25,6 +34,9 @@
 			<div class="col">col</div>
 			<div class="col">col</div>
 		</div>
+
+		<!-- -->
+
 		<h3 class="mt-5">Установка ширины одного столбца</h3>
 		<div class="row">
 			<div class="col">Sidebar-1</div>
@@ -72,7 +84,6 @@
 		</div>
 
 		<h3 class="mt-5">Комбинация классов</h3>
-
 		<div class="row">
 			<div class="col-md-3 col-sm-12">Sidebar-1</div>
 			<div class="col-md-3 col-sm-2">Sidebar-2</div>
@@ -80,7 +91,6 @@
 		</div>
 
 		<h3 class="mt-5">Переполнение ряда</h3>
-
 		<div class="row">
 			<div class="col-md-3 col-sm-4">Sidebar-1</div>
 			<div class="col-md-6 col-sm-8">Content</div>
@@ -88,12 +98,86 @@
 		</div>
 
 		<h3 class="mt-5">Сброс отступов</h3>
-
 		<div class="row no-gutters">
 			<div class="col-md-3 col-sm-4">Sidebar-1</div>
 			<div class="col-md-6 col-sm-8">Content</div>
 			<div class="col-md-3">Sidebar-2</div>
 		</div>
+
+		<!-- -->
+
+		<h3 class="mt-5">Выравнивание</h3>
+
+		<br>
+
+		<h3>Выравнивание ряда пл вертикали</h3>
+		<div class="row flex-cols align-items-start">
+			<div class="col">col-1</div>
+			<div class="col">col-2</div>
+			<div class="col">col-3</div>
+		</div>
+
+		<br>
+
+		<div class="row flex-cols align-items-center">
+			<div class="col">col-1</div>
+			<div class="col">col-2</div>
+			<div class="col">col-3</div>
+		</div>
+
+		<br>
+
+		<div class="row flex-cols align-items-end">
+			<div class="col">col-1</div>
+			<div class="col">col-2</div>
+			<div class="col">col-3</div>
+		</div>
+
+		<h3 class="mt-5">Выравнивание колонок по вертикали</h3>
+			<div class="row flex-cols">
+				<div class="col align-self-start">col-1</div>
+				<div class="col align-self-center">col-2</div>
+				<div class="col align-self-end">col-3</div>
+			</div>
+
+		<h3 class="mt-5">Выравнивание колонок по горизонтали</h3>
+			<div class="row justify-content-start">
+				<div class="col-4">col-1</div>
+				<div class="col-4">col-2</div>
+			</div>
+
+		<br>
+
+			<div class="row justify-content-center">
+				<div class="col-4">col-1</div>
+				<div class="col-4">col-2</div>
+			</div>
+
+		<br>
+
+			<div class="row justify-content-end">
+				<div class="col-4">col-1</div>
+				<div class="col-4">col-2</div>
+			</div>
+
+		<br>
+
+			<div class="row justify-content-around">
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-2</div>
+				<div class="col-1">col-3</div>
+				<div class="col-1">col-4</div>
+			</div>
+
+		<br>
+
+			<div class="row justify-content-between">
+				<div class="col-1">col-1</div>
+				<div class="col-1">col-2</div>
+				<div class="col-1">col-3</div>
+				<div class="col-1">col-4</div>
+			</div>
+
 	</div>
 </div>
 
